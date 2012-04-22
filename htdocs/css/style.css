@@ -1,0 +1,23 @@
+html {
+    background-color: #ffffff;
+    color: #555;
+}
+
+a {
+    color: #4fa5e3;
+    text-decoration: none;
+}
+
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Bitter", sans-serif;
+}
+
+h1, h2 {
+    font-weight: normal;
+}
