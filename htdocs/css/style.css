@@ -21,3 +21,36 @@ body {
 h1, h2 {
     font-weight: normal;
 }
+
+p {
+    line-height: 1.5em;
+}
+
+.g .g-1-2 {
+    float: left;
+    width: 50%;
+}
+
+.g .g-1-3 {
+    float: left;
+    width: 33%;
+}
+
+.g .g-1-4 {
+    float: left;
+    width: 25%;
+}
+
+.g .g-1-5 {
+    float: left;
+    width: 20%;
+}
+
+ul.g {
+    list-style: none;
+    padding: 0;
+}
+
+ul.g li {
+    text-align: center;
+}
