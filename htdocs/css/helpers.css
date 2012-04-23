@@ -12,3 +12,4 @@
 .clearfix:after { clear: both; }
 .clearfix { zoom: 1; }
 
+.nowrap { white-space: nowrap; }
