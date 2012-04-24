@@ -10,6 +10,10 @@
         text-align: center;
     }
 
+    h1 {
+        text-align: center;
+    }
+
     #logo {
         height: auto;
         min-width: 150px;
@@ -20,6 +24,7 @@
         padding: 0 1em;
     }
 
+    iframe { display: none; }
 }
 
 @media screen and (min-width: 600px) {
@@ -29,6 +34,10 @@
         text-align: center;
         max-width: 350px;
         width: 25%;
+    }
+
+    h1 {
+        text-align: left;
     }
 
     #logo {
@@ -41,4 +50,7 @@
         padding: 0 0 0 2em;
         max-width: 550px;
     }
+
+    iframe { display: block; }
+    img.map { display: none; }
 }
