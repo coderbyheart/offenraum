@@ -26,6 +26,13 @@
     <target name="concat">
 
         <mkdir dir="${build.dir}"/>
+	
+	<echo message="SASSing…"/>
+	  <exec executable="sass">
+            <arg value="${assets.dir}/styles.scss"/>
+	    <arg value="${assets.dir}/styles.css"/>
+        </exec>
+
 
         <echo message="Building ${final_css}"/>
         <concat destfile="${final_css}" force="true" fixlastline="true">
