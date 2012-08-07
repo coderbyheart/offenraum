@@ -52,19 +52,18 @@ h2 {
     font-size: 0.75em;
     font-weight: bold;
     color: #fff;
-    padding: 0.5em;
+    padding: 0.25em 0.75em;
     bottom: 3em; }
-
-img.bigpic {
-  border: 1px solid #5abbe6;
-  width: 100%; }
+  #bigpic img.bigpic {
+    border: 1px solid #5abbe6;
+    width: 100%; }
 
 #vcard dt {
   float: left;
   clear: left;
   width: 15%;
-  text-align: center; }
-
+  text-align: center;
+  line-height: 1.15em; }
 #vcard dd {
   float: left;
   clear: right;
@@ -75,14 +74,12 @@ img.bigpic {
 
 header nav ul {
   padding: 0; }
-
-header nav li {
-  display: inline-block;
-  margin-left: 1em; }
-
-header nav li.sep {
-  display: block;
-  height: 0.5em; }
+  header nav ul li {
+    display: inline-block;
+    margin-left: 1em; }
+  header nav ul li.sep {
+    display: block;
+    height: 0.5em; }
 
 table th {
   text-align: left; }
@@ -139,11 +136,10 @@ ul.socnet li {
     background: url("./leather.png");
     box-shadow: rgba(0, 0, 0, 0.5) 1px 3px 10px;
     border-radius: 5px; }
-
-  #vcard img.logo, #vcard dl, #vcard p {
-    width: 80%;
-    margin: 10%;
-    font-size: 0.875em; }
+    #vcard img.logo, #vcard dl, #vcard p {
+      width: 80%;
+      margin: 10%;
+      font-size: 0.875em; }
 
   header nav {
     text-align: right;

@@ -81,45 +81,51 @@ h2 {
     font-size: 0.75em;
     font-weight: bold;
     color: #fff;
-    padding: 0.5em;
+    padding: 0.25em 0.75em;
     bottom: 3em;
+  }
+
+  img.bigpic {
+    border: 1px solid $blue;
+    width: 100%;
   }
 }
 
-img.bigpic {
-  border: 1px solid $blue;
-  width: 100%;
+#vcard {
+
+  dt {
+    float: left;
+    clear: left;
+    width: 15%;
+    text-align: center;
+    line-height: 1.15em;
+  }
+
+  dd {
+    float: left;
+    clear: right;
+    width: 85%;
+    margin: 0;
+    line-height: 1.15em;
+    margin-bottom: 0.5em;
+  }
 }
 
-#vcard dt {
-  float: left;
-  clear: left;
-  width: 15%;
-  text-align: center;
+header {
+  nav {
+    ul {
+      padding: 0;
+      li {
+        display: inline-block;
+        margin-left: 1em;
 
-}
-
-#vcard dd {
-  float: left;
-  clear: right;
-  width: 85%;
-  margin: 0;
-  line-height: 1.15em;
-  margin-bottom: 0.5em;
-}
-
-header nav ul {
-  padding: 0;
-}
-
-header nav li {
-  display: inline-block;
-  margin-left: 1em;
-}
-
-header nav li.sep {
-  display: block;
-  height: 0.5em;
+      }
+      li.sep {
+        display: block;
+        height: 0.5em;
+      }
+    }
+  }
 }
 
 table {
@@ -197,12 +203,11 @@ ul.socnet {
     background: url("./leather.png");
     box-shadow: rgba(0, 0, 0, 0.5) 1px 3px 10px;
     border-radius: 5px;
-  }
-
-  #vcard img.logo, #vcard dl, #vcard p {
-    width: 80%;
-    margin: 10%;
-    font-size: 0.875em;
+    img.logo, dl, p {
+      width: 80%;
+      margin: 10%;
+      font-size: 0.875em;
+    }
   }
 
   header nav {
