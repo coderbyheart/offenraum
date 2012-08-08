@@ -3,6 +3,7 @@
 $bg: #fff;
 $font: #555;
 $blue: #5abbe6;
+$blue_hover: darken($blue, 20);
 $turquois: #82e7c0;
 $purple: #d4a6f3;
 $warning: #AF153C;
@@ -13,6 +14,12 @@ $col3: $col * 3;
 $col4: $col * 4;
 $col5: $col * 5;
 $col6: $col * 6;
+$col7: $col * 7;
+$col8: $col * 8;
+$col9: $col * 9;
+$col10: $col * 10;
+$col11: $col * 11;
+$col12: $col * 12;
 
 /** Helpers **/
 
@@ -35,6 +42,80 @@ $col6: $col * 6;
   display: none;
 }
 
+.textcenter {
+  text-align: center;
+}
+
+.nolist {
+  list-style: none;
+  padding: 0;
+}
+
+/** Cols **/
+.col {
+  float: left;
+}
+
+.col1 {
+  @extend .col;
+  width: $col;
+}
+
+.col2 {
+  @extend .col;
+  width: $col2;
+}
+
+.col3 {
+  @extend .col;
+  width: $col3;
+}
+
+.col4 {
+  @extend .col;
+  width: $col4;
+}
+
+.col5 {
+  @extend .col;
+  width: $col5;
+}
+
+.col6 {
+  @extend .col;
+  width: $col6;
+}
+
+.col7 {
+  @extend .col;
+  width: $col7;
+}
+
+.col8 {
+  @extend .col;
+  width: $col8;
+}
+
+.col9 {
+  @extend .col;
+  width: $col9;
+}
+
+.col10 {
+  @extend .col;
+  width: $col10;
+}
+
+.col11 {
+  @extend .col;
+  width: $col11;
+}
+
+.col12 {
+  @extend .col;
+  width: $col12;
+}
+
 /** Styles **/
 
 html {
@@ -54,8 +135,16 @@ a {
   color: $blue;
 }
 
+a:hover {
+  color: $blue_hover;
+}
+
 a.dim {
   color: lighten($font, 30);
+}
+
+a.dim:hover {
+  color: $blue_hover;
 }
 
 .warning {
@@ -83,6 +172,9 @@ h2 {
     color: #fff;
     padding: 0.25em 0.75em;
     bottom: 3em;
+  }
+  .label:hover {
+    background-color: $blue_hover;
   }
 
   img.bigpic {
@@ -117,12 +209,16 @@ header {
       padding: 0;
       li {
         display: inline-block;
+      }
+      li+li {
         margin-left: 1em;
-
       }
       li.sep {
         display: block;
         height: 0.5em;
+      }
+      li.sep+li {
+        margin-left: 0;
       }
     }
   }
@@ -140,12 +236,19 @@ table {
   }
 }
 
-ul.socnet {
+#grid {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  padding: 0;
   li {
     list-style: none;
     float: left;
-    width: 30%;
-    text-align: center;
+    width: $col;
+    height: 100%;
+    border-right: 1px solid #ff00ff;
   }
 }
 

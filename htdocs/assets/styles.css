@@ -14,6 +14,53 @@
 .hidden {
   display: none; }
 
+.textcenter {
+  text-align: center; }
+
+.nolist {
+  list-style: none;
+  padding: 0; }
+
+/** Cols **/
+.col, .col1, .col2, .col3, .col4, .col5, .col6, .col7, .col8, .col9, .col10, .col11, .col12 {
+  float: left; }
+
+.col1 {
+  width: 6.25%; }
+
+.col2 {
+  width: 12.5%; }
+
+.col3 {
+  width: 18.75%; }
+
+.col4 {
+  width: 25%; }
+
+.col5 {
+  width: 31.25%; }
+
+.col6 {
+  width: 37.5%; }
+
+.col7 {
+  width: 43.75%; }
+
+.col8 {
+  width: 50%; }
+
+.col9 {
+  width: 56.25%; }
+
+.col10 {
+  width: 62.5%; }
+
+.col11 {
+  width: 68.75%; }
+
+.col12 {
+  width: 75%; }
+
 /** Styles **/
 html {
   background-color: white;
@@ -29,8 +76,14 @@ a {
   text-decoration: none;
   color: #5abbe6; }
 
+a:hover {
+  color: #1d8cbd; }
+
 a.dim {
   color: #a2a2a2; }
+
+a.dim:hover {
+  color: #1d8cbd; }
 
 .warning {
   color: #af153c; }
@@ -54,6 +107,8 @@ h2 {
     color: #fff;
     padding: 0.25em 0.75em;
     bottom: 3em; }
+  #bigpic .label:hover {
+    background-color: #1d8cbd; }
   #bigpic img.bigpic {
     border: 1px solid #5abbe6;
     width: 100%; }
@@ -75,11 +130,14 @@ h2 {
 header nav ul {
   padding: 0; }
   header nav ul li {
-    display: inline-block;
+    display: inline-block; }
+  header nav ul li + li {
     margin-left: 1em; }
   header nav ul li.sep {
     display: block;
     height: 0.5em; }
+  header nav ul li.sep + li {
+    margin-left: 0; }
 
 table th {
   text-align: left; }
@@ -88,11 +146,19 @@ table .right {
 table td, table th {
   padding-right: 0.25em; }
 
-ul.socnet li {
-  list-style: none;
-  float: left;
-  width: 30%;
-  text-align: center; }
+#grid {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  padding: 0; }
+  #grid li {
+    list-style: none;
+    float: left;
+    width: 6.25%;
+    height: 100%;
+    border-right: 1px solid #ff00ff; }
 
 /** Responsive Styles **/
 @media screen {
