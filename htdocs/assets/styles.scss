@@ -161,6 +161,7 @@ h2 {
   width: 100%;
   height: auto;
   position: relative;
+  display: none;
 
   .label {
     position: absolute;
@@ -201,10 +202,21 @@ h2 {
     line-height: 1.15em;
     margin-bottom: 0.5em;
   }
+
+  img.logo {
+    width: 65%;
+    margin-left: 17.5%;
+  }
+}
+
+article {
+  margin: $halfcol;
 }
 
 header {
+  margin: $halfcol;
   nav {
+    text-align: center;
     ul {
       padding: 0;
       li {
@@ -252,35 +264,16 @@ table {
   }
 }
 
-/** Responsive Styles **/
-
-@media screen {
-  header, article {
-    margin: $halfcol;
-  }
-
-  #bigpic {
-    display: none;
-  }
-
-  header nav {
-    text-align: center;
-  }
-
-  #vcard img.logo {
-    width: 65%;
-    margin-left: 17.5%;
-  }
-
-  iframe {
-    display: none;
-  }
-
-  img.map {
-    width: 100%;
-    height: auto;
-  }
+iframe {
+  display: none;
 }
+
+img.map {
+  width: 100%;
+  height: auto;
+}
+
+/** Responsive Styles **/
 
 @media screen and (min-width: 768px) {
   header {

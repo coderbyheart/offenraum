@@ -96,7 +96,8 @@ h2 {
 #bigpic {
   width: 100%;
   height: auto;
-  position: relative; }
+  position: relative;
+  display: none; }
   #bigpic .label {
     position: absolute;
     right: 0;
@@ -126,18 +127,28 @@ h2 {
   margin: 0;
   line-height: 1.15em;
   margin-bottom: 0.5em; }
+#vcard img.logo {
+  width: 65%;
+  margin-left: 17.5%; }
 
-header nav ul {
-  padding: 0; }
-  header nav ul li {
-    display: inline-block; }
-  header nav ul li + li {
-    margin-left: 1em; }
-  header nav ul li.sep {
-    display: block;
-    height: 0.5em; }
-  header nav ul li.sep + li {
-    margin-left: 0; }
+article {
+  margin: 3.125%; }
+
+header {
+  margin: 3.125%; }
+  header nav {
+    text-align: center; }
+    header nav ul {
+      padding: 0; }
+      header nav ul li {
+        display: inline-block; }
+      header nav ul li + li {
+        margin-left: 1em; }
+      header nav ul li.sep {
+        display: block;
+        height: 0.5em; }
+      header nav ul li.sep + li {
+        margin-left: 0; }
 
 table th {
   text-align: left; }
@@ -160,27 +171,14 @@ table td, table th {
     height: 100%;
     border-right: 1px solid #ff00ff; }
 
+iframe {
+  display: none; }
+
+img.map {
+  width: 100%;
+  height: auto; }
+
 /** Responsive Styles **/
-@media screen {
-  header, article {
-    margin: 3.125%; }
-
-  #bigpic {
-    display: none; }
-
-  header nav {
-    text-align: center; }
-
-  #vcard img.logo {
-    width: 65%;
-    margin-left: 17.5%; }
-
-  iframe {
-    display: none; }
-
-  img.map {
-    width: 100%;
-    height: auto; } }
 @media screen and (min-width: 768px) {
   header {
     margin: 3.125% 6.25% 6.25% 6.25%; }
