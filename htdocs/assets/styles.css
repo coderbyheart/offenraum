@@ -182,11 +182,10 @@ table td, table th {
 iframe {
   display: none; }
 
-.fullwidth {
+.fullwidth, img.map {
   width: 100%; }
 
 img.map {
-  @extends .fullwidth;
   height: auto; }
 
 /** Responsive Styles **/

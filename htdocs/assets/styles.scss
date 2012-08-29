@@ -286,12 +286,9 @@ iframe {
 }
 
 img.map {
-
-@extends .fullwidth;
-height: auto
-
-;
-  }
+  @extend .fullwidth;
+  height: auto;
+}
 
 /** Responsive Styles **/
 
