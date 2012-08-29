@@ -91,6 +91,9 @@ a.dim:hover {
 .warning {
   color: #af153c; }
 
+dt {
+  font-weight: bold; }
+
 h2 {
   margin-top: 1.5em;
   padding-top: 1.5em;
@@ -179,8 +182,11 @@ table td, table th {
 iframe {
   display: none; }
 
+.fullwidth {
+  width: 100%; }
+
 img.map {
-  width: 100%;
+  @extends .fullwidth;
   height: auto; }
 
 /** Responsive Styles **/

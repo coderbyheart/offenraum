@@ -158,6 +158,10 @@ a.dim:hover {
   color: $warning;
 }
 
+dt {
+  font-weight: bold;
+}
+
 h2 {
   margin-top: 1.5em;
   padding-top: 1.5em;
@@ -277,10 +281,17 @@ iframe {
   display: none;
 }
 
-img.map {
+.fullwidth {
   width: 100%;
-  height: auto;
 }
+
+img.map {
+
+@extends .fullwidth;
+height: auto
+
+;
+  }
 
 /** Responsive Styles **/
 
