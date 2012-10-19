@@ -1039,3 +1039,6 @@ img.map {
 
   .desktop.inline {
     display: inline; } }
+.event .eventlogo {
+  float: right;
+  width: 50%; }
