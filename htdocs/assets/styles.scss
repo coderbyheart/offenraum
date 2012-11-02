@@ -123,6 +123,11 @@ $col12: $col * 12;
   width: $col12;
 }
 
+.col16 {
+  @extend .col;
+  width: 100%;
+}
+
 /** Styles **/
 
 html {
@@ -368,4 +373,8 @@ img.map {
   font-size: 4em;
   color: darken($bg, 2);
   text-shadow: -1px -1px 1px darken($bg, 10);
+}
+
+.compactlines {
+  line-height: 1em;
 }
