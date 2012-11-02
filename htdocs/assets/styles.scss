@@ -357,4 +357,15 @@ img.map {
     float: right;
     width: 50%;
   }
+  .eventlogo-small {
+    float: right;
+    width: 20%;
+  }
+}
+
+.dots {
+  text-align: center;
+  font-size: 4em;
+  color: darken($bg, 2);
+  text-shadow: -1px -1px 1px darken($bg, 10);
 }

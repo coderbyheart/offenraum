@@ -1042,3 +1042,12 @@ img.map {
 .event .eventlogo {
   float: right;
   width: 50%; }
+.event .eventlogo-small {
+  float: right;
+  width: 20%; }
+
+.dots {
+  text-align: center;
+  font-size: 4em;
+  color: #fafafa;
+  text-shadow: -1px -1px 1px #e6e6e6; }
