@@ -969,7 +969,8 @@ table th {
 table .right {
   text-align: right; }
 table td, table th {
-  padding-right: 0.25em; }
+  padding-right: 0.25em;
+  vertical-align: top; }
 
 #grid {
   position: absolute;
