@@ -1,5 +1,8 @@
 User-agent: *
 Disallow: /responsive.html
 Disallow: /tv
+Disallow: /wordpress
+Disallow: /wordpress_theme
+Disallow: /wordpress_plugin
 Allow: /
 
