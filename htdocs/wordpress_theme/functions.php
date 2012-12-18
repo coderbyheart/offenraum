@@ -15,6 +15,12 @@ function the_page_content($page_slug)
     $page = get_page_by_slug($page_slug);
     setup_postdata($page);
     the_content();
+    wp_reset_query();
+}
+
+function the_raw_page_content($page_slug)
+{
+    echo page_content($page_slug);
 }
 
 function page_content($page_slug)
@@ -26,8 +32,11 @@ function page_content($page_slug)
 function get_page_by_slug($slug)
 {
     $pageID = get_pageID_by_slug($slug);
-    if ($pageID)
-        return get_post($pageID);
+    if ($pageID) {
+        $post = get_post($pageID);
+        wp_reset_query();
+        return $post;
+    }
     return null;
 }
 

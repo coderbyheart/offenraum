@@ -6,7 +6,7 @@ get_header(); ?>
     <small>Blog</small>
 </h1>
 
-    <p>In unserem Blog berichten wir und unsere Coworker aus dem Alltag in Offenbach's erstem Coworking Space.</p>
+<p>In unserem Blog berichten wir und unsere Coworker aus dem Alltag in Offenbach's erstem Coworking Space.</p>
 
 <?php while (have_posts()) : the_post(); ?>
 
@@ -19,9 +19,10 @@ get_header(); ?>
     <?php the_content(); ?>
 
     <nav class="nav-single">
-        <span class="nav-previous"><?php previous_post_link( '%link', '<span class="meta-nav">' . _x( '&larr;', 'Previous post link', 'twentytwelve' ) . '</span> %title' ); ?></span>
-        <span class="nav-next"><?php next_post_link( '%link', '%title <span class="meta-nav">' . _x( '&rarr;', 'Next post link', 'twentytwelve' ) . '</span>' ); ?></span>
-    </nav><!-- .nav-single -->
+        <span class="nav-previous"><?php previous_post_link('%link', '<span class="meta-nav">' . _x('&larr;', 'Previous post link', 'twentytwelve') . '</span> %title'); ?></span>
+        <span class="nav-next"><?php next_post_link('%link', '%title <span class="meta-nav">' . _x('&rarr;', 'Next post link', 'twentytwelve') . '</span>'); ?></span>
+    </nav>
+    <!-- .nav-single -->
 </div>
 
 <?php endwhile; // end of the loop. ?>

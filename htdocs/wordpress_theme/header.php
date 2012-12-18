@@ -3,7 +3,7 @@
 <head>
     <meta charset="<?php bloginfo('charset'); ?>">
     <title><?php wp_title('|', true, 'right'); ?><?php bloginfo('title'); ?> · <?php bloginfo('description'); ?></title>
-    <meta name="description" content="<?php the_page_content('meta-description'); ?>">
+    <meta name="description" content="<?php the_raw_page_content('meta-description'); ?>">
     <meta name="author" content="Markus Tacker | http://tckr.cc/">
     <!-- See /humans.txt for more infos -->
     <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -85,13 +85,11 @@
         </dl>
     </div>
 
-    <?php
-    $bigPicId = get_pageID_by_slug('big-picture');
-    $bigpic = page_content('big-picture'); ?>
+    <?php $bigPic = get_page_by_slug('big-picture'); ?>
     <div id="bigpic">
-        <a class="label" href="<?php echo get_post_meta($bigPicId, 'url', true); ?>"><i class="icon-camera"></i>
-            <?php echo $bigpic; ?>
-        </a><img src="<?php echo get_post_meta($bigPicId, 'image_url', true); ?>" class="bigpic" alt="<?php echo $bigpic; ?>">
+        <a class="label" href="<?php echo get_post_meta($bigPic->ID, 'url', true); ?>"><i class="icon-camera"></i>
+            <?php echo $bigPic->post_content; ?>
+        </a><img src="<?php echo get_post_meta($bigPic->ID, 'image_url', true); ?>" class="bigpic" alt="<?php echo $bigPic->post_content; ?>">
     </div>
 </header>
 <article>
