@@ -870,6 +870,49 @@ li[class^="icon-"].icon-large:before, li[class*=" icon-"].icon-large:before {
 .col16 {
   width: 100%; }
 
+/** Offset **/
+.offset, .offset1, .offset2, .offset3, .offset4, .offset5, .offset6, .offset7, .offset8, .offset9, .offset10, .offset11, .offset12, .offset16 {
+  float: left; }
+
+.offset1 {
+  margin-left: 6.25%; }
+
+.offset2 {
+  margin-left: 12.5%; }
+
+.offset3 {
+  margin-left: 18.75%; }
+
+.offset4 {
+  margin-left: 25%; }
+
+.offset5 {
+  margin-left: 31.25%; }
+
+.offset6 {
+  margin-left: 37.5%; }
+
+.offset7 {
+  margin-left: 43.75%; }
+
+.offset8 {
+  margin-left: 50%; }
+
+.offset9 {
+  margin-left: 56.25%; }
+
+.offset10 {
+  margin-left: 62.5%; }
+
+.offset11 {
+  margin-left: 68.75%; }
+
+.offset12 {
+  margin-left: 75%; }
+
+.offset16 {
+  margin-left: 100%; }
+
 /** Styles **/
 html {
   background-color: white;
@@ -915,7 +958,7 @@ h2 {
     position: absolute;
     right: 0;
     background-color: #5abbe6;
-    font-family: Verdana, Arial;
+    font-family: Verdana, Arial, sans-serif;
     font-size: 0.75em;
     font-weight: bold;
     color: #fff;
@@ -1058,3 +1101,20 @@ img.map {
 
 .compactlines {
   line-height: 1em; }
+
+div.post img.size-full {
+  width: 100%; }
+
+dl.foto {
+  width: 100%;
+  background-color: #eeeeee; }
+  dl.foto dt img {
+    border: 1px solid #a2a2a2;
+    width: 96%;
+    margin-top: 2%;
+    margin-left: 2%; }
+  dl.foto dd {
+    margin-left: 2%;
+    margin-bottom: 5%;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 0.75em; }
