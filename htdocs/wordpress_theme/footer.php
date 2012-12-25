@@ -1,4 +1,6 @@
 </article>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js" type="text/javascript"></script>
+<script src="/wordpress_theme/script.js?<?php echo time(); ?>" type="text/javascript"></script>
 <script type="text/javascript">
     var _gaq = _gaq || [];
     _gaq.push(

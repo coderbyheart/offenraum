@@ -245,34 +245,6 @@ h2 {
   border-top: 1px solid lighten($font, 60);
 }
 
-#bigpic {
-  width: 100%;
-  height: auto;
-  position: relative;
-  display: none;
-  margin-top: 1em;
-
-  .label {
-    position: absolute;
-    right: 0;
-    background-color: $blue;
-    font-family: Verdana, Arial, sans-serif;
-    font-size: 0.75em;
-    font-weight: bold;
-    color: #fff;
-    padding: 0.25em 0.75em;
-    bottom: 3em;
-  }
-  .label:hover {
-    background-color: $blue_hover;
-  }
-
-  img.bigpic {
-    border: 1px solid $blue;
-    width: 100%;
-  }
-}
-
 #vcard {
 
   dt {
@@ -380,7 +352,7 @@ img.map {
     margin-right: $col + $halfcol;
   }
 
-  #bigpic, #vcard {
+  #vcard {
     display: block;
   }
 
