@@ -24,10 +24,9 @@ Description: Wordpress-Theme für offenraum.de
   position: absolute;
   z-index: 9;
   cursor: pointer;
-  font-size: 2em;
+  font-size: 4em;
   color: rgba(255,255,255,0.50);
-  
-  top: 5%;
+  top: 10%;
 }
 
 #bigpic .nav:hover {
@@ -36,7 +35,7 @@ Description: Wordpress-Theme für offenraum.de
 }
 
 #bigpic .nav-left {
-  right: 5%;
+  right: 10%;
 }
 
 #bigpic .nav-right {
@@ -84,6 +83,22 @@ Description: Wordpress-Theme für offenraum.de
     
     font-style: italic;
   font-size: 0.75em;
+}
+
+.size-full {
+  width: 100%;
+}
+
+.size-small {
+  width: 25%;
+}
+
+.align-left {
+  float: left;
+}
+
+.center {
+  text-align: center; 
 }
 
 /** Responsive Styles **/

@@ -4,5 +4,7 @@ Disallow: /tv
 Disallow: /wordpress
 Disallow: /wordpress_theme
 Disallow: /wordpress_plugin
+Disallow: /big-picture
+Disallow: /offenraum
 Allow: /
 
