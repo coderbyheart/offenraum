@@ -827,6 +827,18 @@ li[class^="icon-"].icon-large:before, li[class*=" icon-"].icon-large:before {
 .desktop {
   display: none; }
 
+.size-full {
+  width: 100%; }
+
+.size-small {
+  width: 25%; }
+
+.align-left {
+  float: left; }
+
+.center {
+  text-align: center; }
+
 /** Cols **/
 .col, .col1, .col2, .col3, .col4, .col5, .col6, .col7, .col8, .col9, .col10, .col11, .col12, .col16 {
   float: left; }
@@ -948,28 +960,6 @@ h2 {
   padding-top: 1.5em;
   border-top: 1px solid #eeeeee; }
 
-#bigpic {
-  width: 100%;
-  height: auto;
-  position: relative;
-  display: none;
-  margin-top: 1em; }
-  #bigpic .label {
-    position: absolute;
-    right: 0;
-    background-color: #5abbe6;
-    font-family: Verdana, Arial, sans-serif;
-    font-size: 0.75em;
-    font-weight: bold;
-    color: #fff;
-    padding: 0.25em 0.75em;
-    bottom: 3em; }
-  #bigpic .label:hover {
-    background-color: #1d8cbd; }
-  #bigpic img.bigpic {
-    border: 1px solid #5abbe6;
-    width: 100%; }
-
 #vcard dt {
   float: left;
   clear: left;
@@ -1037,6 +1027,59 @@ iframe {
 
 img.map {
   height: auto; }
+
+/** Slideshow **/
+#bigpic {
+  overflow: hidden;
+  border: 1px solid #5abbe6;
+  width: 100%;
+  position: relative;
+  display: none;
+  margin-top: 1em; }
+  #bigpic .nav {
+    position: absolute;
+    z-index: 9;
+    cursor: pointer;
+    font-size: 4em;
+    color: rgba(255, 255, 255, 0.5);
+    top: 10%; }
+  #bigpic .nav:hover {
+    color: rgba(255, 255, 255, 0.75);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.75); }
+  #bigpic .nav-left {
+    right: 10%; }
+  #bigpic .nav-right {
+    right: 2%; }
+  #bigpic .bigpic img {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    z-index: 7; }
+  #bigpic .text {
+    position: absolute;
+    right: 0;
+    bottom: 2%;
+    z-index: 8;
+    color: #fff;
+    text-align: right; }
+    #bigpic .text p {
+      font-family: Verdana, sans-serif;
+      font-size: 0.75em;
+      background-color: rgba(90, 187, 230, 0.95);
+      padding: 0.25em 0.5em;
+      margin: 0 0 0.1em 0;
+      float: right;
+      clear: both;
+      line-height: 1.5em; }
+    #bigpic .text p.title {
+      padding: 0.1em 0.5em;
+      font-size: 1.25em;
+      font-family: Bitter, Georgia, serif; }
+    #bigpic .text p.label {
+      background-color: rgba(255, 255, 255, 0.95);
+      color: #1d8cbd;
+      font-style: italic;
+      font-size: 0.75em; }
 
 /** Responsive Styles **/
 @media screen and (min-width: 768px) {
