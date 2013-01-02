@@ -15,7 +15,7 @@ $subels = new WP_Query(sprintf('post_type=coworker&post_status=publish&orderby=m
                 ?>
 
                 <div class="col<?php echo $subels_span; ?> offset<?php echo $subels_offset; ?> compactlines" itemscope itemtype="http://schema.org/Organization">
-                    <a href="<?php echo $subels_url; ?>" itemprop="url" rel="friend neighbor met co-worker" title="<?php the_title() ?> &mdash; <?php echo $post->post_content; ?>"><img src="<?php echo $subels_image_url; ?>" alt="<?php the_title() ?> &mdash; <?php echo $post->post_content; ?>" height="100" itemprop="image"><br><span itemprop="name"><?php the_title() ?></span></a><br>
+                    <a href="<?php echo $subels_url; ?>" itemprop="url" rel="friend co-resident met co-worker" title="<?php the_title() ?> &mdash; <?php echo $post->post_content; ?>"><img src="<?php echo $subels_image_url; ?>" alt="<?php the_title() ?> &mdash; <?php echo $post->post_content; ?>" height="100" itemprop="image"><br><span itemprop="name"><?php the_title() ?></span></a><br>
                     <small itemprop="description"><?php echo $post->post_content; ?></small>
                     <br>
                 </div>

@@ -52,6 +52,17 @@ function offenraum_custom_post_friend_box_content($post)
 
     echo sprintf('<p><label>URL<br><input type="text" name="friend_url" placeholder="http://somedomain.com/image.jpg" value="%s"></label></p>', get_post_meta($post->ID, 'url', true));
 
+    $xfn = explode(' ', get_post_meta($post->ID, 'url_xfn', true));
+    echo "<h4>XFN</h4><dl>";
+    foreach (offenraum_get_xnf() as $cat => $values) {
+        echo "<dt>$cat</dt><dd>";
+        foreach ($values as $k => $v) {
+            echo sprintf('<label><input type="checkbox" name="url_xfn_%s" value="1" %s> <code>%s</code> %s<br>', $k, in_array($k, $xfn) ? 'checked' : '', $k, $v);
+        }
+        echo "</dd>";
+    }
+    echo "</dl>";
+
     echo sprintf('<p><label>Image URL<br><input type="text" id="friend_image_url" name="friend_image_url" placeholder="http://somedomain.com/image.jpg" value="%s"></label></p>', get_post_meta($post->ID, 'image_url', true));
 }
 
@@ -78,6 +89,16 @@ function offenraum_custom_post_friend_box_save($post_id)
     update_post_meta($post_id, 'image_url', $friend_image_url);
     update_post_meta($post_id, 'span', $span);
     update_post_meta($post_id, 'offset', $offset);
+    $xfn = array();
+    foreach (offenraum_get_xnf() as $cat => $values) {
+        foreach ($values as $k => $v) {
+            $xfn_set = isset($_POST['url_xfn_' . $k]) and $_POST['url_xfn_' . $k] == '1';
+            if ($xfn_set) {
+                $xfn[] = $k;
+            }
+        }
+    }
+    update_post_meta($post_id, 'url_xfn', join(' ', $xfn));
 }
 
 add_action('init', 'offenraum_custom_post_friend');
