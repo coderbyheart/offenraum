@@ -19,11 +19,11 @@ function offenraum_custom_post_friend()
     );
     $args = array(
         'labels' => $labels,
-        'description' => 'Holds our friend and product specific data',
+        'description' => 'Freunde des OFfenraums',
         'public' => true,
-        'menu_position' => 5,
-        'supports' => array('title', 'editor', 'thumbnail', 'excerpt', 'comments'),
-        'has_archive' => true,
+        'menu_position' => 7,
+        'supports' => array('title'),
+        'has_archive' => false,
     );
     register_post_type('friend', $args);
 }

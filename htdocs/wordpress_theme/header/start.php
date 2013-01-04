@@ -8,8 +8,9 @@
     <!-- See /humans.txt for more infos -->
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Bitter:400,700">
-    <?php // define('BUST', time()); 
-    define('BUST', '20130102');?>
+    <?php
+    // define('BUST', time());
+    define('BUST', '20130104');?>
     <link rel="stylesheet" href="/build/complete-min.<?php echo BUST; ?>.css" type="text/css">
     <!--
     <link rel="stylesheet" href="/assets/normalize.css" type="text/css">

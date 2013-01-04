@@ -51,4 +51,18 @@ $(document).ready(function () {
       goDir(-1);
     });
     startTimer();
+
+    // Buchung
+
+    $('table.calendar').each(function(i, t) {
+        var table = $(t);
+        var input = $(table.data('target'));
+        if (!input) return;
+        table.find('td').click(function(ev) {
+            var el = $(ev.target).parent('td');
+            if (!el.hasClass('free') && !el.hasClass('busy')) return;
+            input.attr('value', el.data('date'));
+        });
+    });
+
 });

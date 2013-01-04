@@ -19,10 +19,10 @@ function offenraum_custom_post_coworker()
     );
     $args = array(
         'labels' => $labels,
-        'description' => 'Holds our coworker and product specific data',
+        'description' => 'Coworker im OFenraum',
         'public' => true,
-        'menu_position' => 5,
-        'supports' => array('title', 'editor', 'thumbnail', 'excerpt', 'comments'),
+        'menu_position' => 6,
+        'supports' => array('title'),
         'has_archive' => true,
     );
     register_post_type('coworker', $args);

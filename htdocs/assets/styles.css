@@ -24,16 +24,20 @@
 .desktop {
   display: none; }
 
-div.post img.size-full {
+img.size-full {
   width: 100%; }
-div.post img.size-small {
+
+img.size-small {
   width: 25%; }
-div.post img.alignright {
+
+.alignright {
   float: right;
   margin-left: 2em; }
-div.post img.alignright.size-full, div.post img.alignleft.size-full {
+
+img.alignright.size-full, img.alignleft.size-full {
   width: auto; }
-div.post img.alignleft {
+
+.alignleft {
   float: left; }
 
 .center {
@@ -310,6 +314,80 @@ dl.foto {
     margin-bottom: 5%;
     font-family: Verdana, Arial, sans-serif;
     font-size: 0.75em; }
+
+/** Forms **/
+a.button {
+  border: 1px solid #5abbe6;
+  border-radius: 0.2em;
+  display: inline-block;
+  padding: 0.25em 0.5em;
+  background-color: #5abbe6;
+  border-bottom-color: rgba(0, 0, 0, 0.25);
+  border-right-color: rgba(0, 0, 0, 0.25);
+  border-left-color: rgba(255, 255, 255, 0.25);
+  border-top-color: rgba(255, 255, 255, 0.25);
+  font-family: Arial, sans-serif;
+  color: rgba(255, 255, 255, 0.95);
+  font-weight: bold;
+  font-size: 0.875em;
+  text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.25), 1px 1px 1px rgba(255, 255, 255, 0.25);
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+  margin-bottom: 2px;
+  margin-right: 2px; }
+
+a.button:hover {
+  box-shadow: none;
+  margin-top: 2px;
+  margin-left: 2px;
+  margin-bottom: 0;
+  margin-right: 0;
+  background-color: #1d8cbd; }
+
+table.calendar {
+  float: left;
+  width: 33.3333%;
+  margin-bottom: 1em; }
+  table.calendar th, table.calendar td {
+    text-align: center; }
+  table.calendar abbr {
+    cursor: pointer; }
+  table.calendar td.closed abbr {
+    cursor: not-allowed; }
+  table.calendar .offmonth {
+    color: #a2a2a2;
+    background-color: #fafafa; }
+  table.calendar .past {
+    background-color: #fafafa;
+    text-decoration: line-through; }
+  table.calendar .closed {
+    background-color: #ee6f8f; }
+  table.calendar .busy {
+    background-color: #fff8b9; }
+  table.calendar .free {
+    background-color: #d8f7eb; }
+  table.calendar td:hover.free, table.calendar td:hover.busy {
+    background-color: #5abbe6;
+    color: #fff; }
+
+form .required {
+  color: #af153c; }
+form fieldset {
+  border: 0;
+  border-top: 1px solid #eeeeee;
+  margin: 0;
+  padding: 0; }
+  form fieldset legend {
+    font-weight: bold;
+    color: #6e6e6e;
+    font-family: Helvetica, Arial, sans-serif;
+    background-color: white;
+    padding-right: 0.5em; }
+form fieldset + fieldset {
+  margin-top: 1em; }
+form textarea, form input {
+  width: 100%;
+  border: 1px solid #d4d4d4;
+  padding: 0.5em; }
 
 /** Responsive Styles **/
 @media screen and (min-width: 768px) {
