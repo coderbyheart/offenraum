@@ -10,7 +10,7 @@
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Bitter:400,700">
     <?php
     // define('BUST', time());
-    define('BUST', '20130104');?>
+    define('BUST', '20130104-2');?>
     <link rel="stylesheet" href="/build/complete-min.<?php echo BUST; ?>.css" type="text/css">
     <!--
     <link rel="stylesheet" href="/assets/normalize.css" type="text/css">

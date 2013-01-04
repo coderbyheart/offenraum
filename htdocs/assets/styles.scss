@@ -379,12 +379,12 @@ img.map {
     z-index: 9;
     cursor: pointer;
     font-size: 4em;
-    color: rgba(255, 255, 255, 0.50);
+    color: rgba($blue, 0.50);
     top: 10%;
+    text-shadow: 1px 1px 1px rgba(#fff, 0.25);
   }
   .nav:hover {
-    color: rgba(255, 255, 255, 0.75);
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.75);
+    color: rgba($blue, 0.85);
   }
 
   .nav-left {

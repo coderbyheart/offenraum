@@ -245,11 +245,11 @@ img.map {
     z-index: 9;
     cursor: pointer;
     font-size: 4em;
-    color: rgba(255, 255, 255, 0.5);
-    top: 10%; }
+    color: rgba(90, 187, 230, 0.5);
+    top: 10%;
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.25); }
   #bigpic .nav:hover {
-    color: rgba(255, 255, 255, 0.75);
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.75); }
+    color: rgba(90, 187, 230, 0.85); }
   #bigpic .nav-left {
     right: 10%; }
   #bigpic .nav-right {
