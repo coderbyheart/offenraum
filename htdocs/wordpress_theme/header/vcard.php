@@ -1,8 +1,6 @@
 <div id="vcard">
     <a href="/"><img src="/build/logo.png" class="logo" alt="<?php bloginfo('title'); ?> &middot; <?php bloginfo('description'); ?>" itemprop="image"></a>
     <dl class="clearfix">
-        <dt class="warning"><i class="icon-warning-sign"></i></dt>
-        <dd class="warning"><strong>Eröffnung ziemlich bald*</strong></dd>
         <dt><i class="icon-map-marker"></i></dt>
         <dd>Senefelderstr. 63<br> 63069 Offenbach<br>
             <small>nur 6 Gehminuten vom Hauptbahnhof</small>
