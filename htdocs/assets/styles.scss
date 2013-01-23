@@ -319,6 +319,9 @@ header {
       li.sep+li {
         margin-left: 0;
       }
+      li.onscroll {
+        display: none;
+      }
     }
   }
 }
@@ -528,10 +531,10 @@ table.calendar {
   }
   .offmonth {
     color: lighten($font, 30);
-    background-color:  #fafafa;
+    background-color: #fafafa;
   }
   .past {
-    background-color:  #fafafa;
+    background-color: #fafafa;
     text-decoration: line-through;
   }
   .closed {
@@ -609,9 +612,28 @@ form {
     }
   }
 
-  header nav {
-    text-align: right;
-    font-size: 0.875em;
+  header {
+    nav {
+      text-align: right;
+      font-size: 0.875em;
+    }
+    nav.scroll {
+      left: $col + $halfcol;
+      width: $col4;
+      position: absolute;
+      padding-top: 100px;
+      ul {
+        width: 80%;
+        margin: 0 10%;
+        li {
+          display: block;
+        }
+        li.mobile {
+          display: none;
+        }
+      }
+    }
+
   }
 
   iframe {

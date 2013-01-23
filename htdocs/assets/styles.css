@@ -200,6 +200,8 @@ header {
         height: 0.5em; }
       header nav ul li.sep + li {
         margin-left: 0; }
+      header nav ul li.onscroll {
+        display: none; }
 
 table th {
   text-align: left; }
@@ -419,6 +421,18 @@ form textarea, form input {
   header nav {
     text-align: right;
     font-size: 0.875em; }
+  header nav.scroll {
+    left: 9.375%;
+    width: 25%;
+    position: absolute;
+    padding-top: 100px; }
+    header nav.scroll ul {
+      width: 80%;
+      margin: 0 10%; }
+      header nav.scroll ul li {
+        display: block; }
+      header nav.scroll ul li.mobile {
+        display: none; }
 
   iframe {
     display: block;

@@ -11,13 +11,13 @@
     <?php
     // define('BUST', time());
     define('BUST', '201301042');?>
-    <link rel="stylesheet" href="/build/complete-min.<?php echo BUST; ?>.css" type="text/css">
     <!--
+    <link rel="stylesheet" href="/build/complete-min.<?php echo BUST; ?>.css" type="text/css">
+    -->
     <link rel="stylesheet" href="/assets/normalize.css" type="text/css">
     <link rel="stylesheet" href="/assets/font-awesome.css" type="text/css">
     <link rel="stylesheet" href="/assets/styles.<?php echo BUST; ?>.css" type="text/css">
     <link rel="stylesheet" href="/wordpress_theme/style.<?php echo BUST; ?>.css" type="text/css">
-    -->
     <?php wp_head(); ?>
 </head>
 <body itemscope itemtype="http://schema.org/Organization">
