@@ -1041,10 +1041,11 @@ img.map {
 #bigpic {
   overflow: hidden;
   border: 1px solid #5abbe6;
-  width: 100%;
-  position: relative;
-  display: none;
-  margin-top: 1em; }
+  width: 87.5%;
+  position: absolute;
+  top: 60px;
+  left: 6.25%;
+  display: none; }
   #bigpic .nav {
     position: absolute;
     z-index: 9;

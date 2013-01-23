@@ -4,6 +4,7 @@ $(document).ready(function () {
     var bigPicHeight = bigPicWidth / 3;
     var bp = $('#bigpic');
     bp.css('height', bigPicHeight + 'px');
+    $('header').css('height', (bigPicHeight + 75) + 'px');
     var pics = $('#bigpic .bigpic');
     bp.data('max', pics.length);
     pics.each(function (i, b) {

@@ -373,10 +373,11 @@ img.map {
 #bigpic {
   overflow: hidden;
   border: 1px solid #5abbe6;
-  width: 100%;
-  position: relative;
+  width: 100% - 2 * $col;
+  position: absolute;
+  top: 60px;
+  left: $col;
   display: none;
-  margin-top: 1em;
   .nav {
     position: absolute;
     z-index: 9;
