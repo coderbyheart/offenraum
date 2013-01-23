@@ -19,5 +19,7 @@
         s.parentNode.insertBefore(ga, s);
     })();
 </script>
+<script async src="//platform.twitter.com/widgets.js" type="text/javascript" charset="utf-8"></script>
+<script async src="http://widgets.flinc.org/widgets/schedule.js" type="text/javascript" charset="utf-8"></script>
 </body>
 </html>
