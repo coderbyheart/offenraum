@@ -355,7 +355,7 @@ table {
   }
 }
 
-iframe {
+iframe.map {
   display: none;
 }
 
@@ -637,7 +637,7 @@ form {
 
   }
 
-  iframe {
+  iframe.map {
     display: block;
     width: 100%;
     height: 400px;
