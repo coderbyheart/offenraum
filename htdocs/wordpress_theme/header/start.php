@@ -20,7 +20,7 @@
     -->
     <?php wp_head(); ?>
 </head>
-<body itemscope itemtype="http://schema.org/Organization">
+<body itemscope itemtype="http://schema.org/Organization" <?php body_class($class); ?>>
 <header>
     <nav>
         <ul>

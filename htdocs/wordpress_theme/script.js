@@ -66,22 +66,23 @@ $(document).ready(function () {
     });
 
     // Menu
-    var mainmenu = $('header nav');
-    mainmenu.find('ul:first').prepend('<li class="onscroll"><a href="#top" class="dim"><i class="icon-arrow-up"></i> Nach oben</a></li>');
-    var vcard = $('#vcard');
-    var vcardBottom = vcard.height();
-    var posTimer;
-    var newpos;
-    var updateMenu = function (timer) {
-        window.clearTimeout(timer);
-        // mainmenu.css('top', newpos);
-        mainmenu.animate({'top':newpos});
-    };
-    $(window).scroll(function (ev) {
-        var scrollTop = $(ev.target).scrollTop();
-        mainmenu.toggleClass('scroll', scrollTop > 100);
-        newpos = Math.max(scrollTop, scrollTop + vcardBottom - scrollTop);
-        if (posTimer) window.clearTimeout(posTimer);
-        posTimer = window.setTimeout(updateMenu, 250);
-    });
-});
+    if (!$(document.body).hasClass('page-template-page-compact-php')) {
+	    var mainmenu = $('header nav');
+	    mainmenu.find('ul:first').prepend('<li class="onscroll"><a href="#top" class="dim"><i class="icon-arrow-up"></i> Nach oben</a></li>');
+	    var vcard = $('#vcard');
+	    var vcardBottom = vcard.height();
+	    var posTimer;
+	    var newpos;
+	    var updateMenu = function (timer) {
+		window.clearTimeout(timer);
+		// mainmenu.css('top', newpos);
+		mainmenu.animate({'top':newpos});
+	    };
+	    $(window).scroll(function (ev) {
+		var scrollTop = $(ev.target).scrollTop();
+		mainmenu.toggleClass('scroll', scrollTop > 100);
+		newpos = Math.max(scrollTop, scrollTop + vcardBottom - scrollTop);
+		if (posTimer) window.clearTimeout(posTimer);
+		posTimer = window.setTimeout(updateMenu, 250);
+	    });
+    }
