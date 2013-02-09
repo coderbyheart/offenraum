@@ -86,3 +86,10 @@ $(document).ready(function () {
 		posTimer = window.setTimeout(updateMenu, 250);
 	    });
     }
+
+    	$('iframe.youtube').each(function(n, i) {
+		var iframe = $(i);
+		var w = iframe.parentsUntil('article').width();
+		iframe.css({'width': w, 'height': w * 0.5625});
+	});
+});
