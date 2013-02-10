@@ -90,6 +90,6 @@ $(document).ready(function () {
     	$('iframe.youtube').each(function(n, i) {
 		var iframe = $(i);
 		var w = iframe.parentsUntil('article').width();
-		iframe.css({'width': w, 'height': w * 0.5625});
+		iframe.css({'width': w, 'height': w * 0.609375});
 	});
 });

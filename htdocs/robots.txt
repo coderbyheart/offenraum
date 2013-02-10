@@ -6,6 +6,7 @@ Disallow: /wordpress_theme
 Disallow: /wordpress_plugin
 Disallow: /big-picture
 Disallow: /offenraum
+Disallow: /handbuch
 Disallow: /buchen
 Disallow: /AGB
 Allow: /
