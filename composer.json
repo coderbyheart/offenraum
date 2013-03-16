@@ -1,0 +1,5 @@
+{
+    "require": {
+        "Respect/Validation": "dev-develop"
+    }
+}
