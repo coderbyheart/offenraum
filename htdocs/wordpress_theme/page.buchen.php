@@ -48,7 +48,6 @@ if (isset($_POST['start'])) {
         ?></ul><?php
         require_once 'parts/booking-form.php';
     }
-    require_once 'parts/booking-ok.php';
 } else {
     require_once 'parts/booking-form.php';
 }
