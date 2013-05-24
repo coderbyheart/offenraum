@@ -26,11 +26,11 @@
     <target name="concat">
 
         <mkdir dir="${build.dir}"/>
-	
-	<echo message="SASSing…"/>
-	  <exec executable="sass">
+
+        <echo message="SASSing…"/>
+        <exec executable="sass">
             <arg value="${assets.dir}/styles.scss"/>
-	    <arg value="${assets.dir}/styles.css"/>
+            <arg value="${assets.dir}/styles.css"/>
         </exec>
 
 
@@ -40,15 +40,19 @@
             <fileset file="${assets.dir}/font-awesome.css"/>
             <fileset file="${assets.dir}/styles.css"/>
         </concat>
-	
-	<copy todir="${build.dir}/">
+
+        <copy todir="${build.dir}/">
             <fileset file="${assets.dir}/fontawesome-*"/>
+        </copy>
+
+        <copy todir="${build.dir}/">
+            <fileset file="${assets.dir}/geschlossenraum.css"/>
         </copy>
 
     </target>
 
     <target name="compress" depends="concat">
-      
+
         <!-- CSS -->
         <yui-compressor
                 warn="false"
@@ -57,7 +61,7 @@
                 fromdir="${build.dir}"
                 todir="${build.dir}"
                 />
-		
+
         <!-- Optimize PNGs -->
         <copy todir="${build.dir}/">
             <fileset file="${assets.dir}/*.png"/>
@@ -67,9 +71,9 @@
         </apply>
 
     </target>
-    
+
     <target name="clean">
-	<delete dir="${build.dir}"/>
+        <delete dir="${build.dir}"/>
     </target>
 
     <target name="main" depends="clean,compress,concat"/>

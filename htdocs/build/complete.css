@@ -1029,7 +1029,7 @@ table td, table th {
     float: left;
     width: 6.25%;
     height: 100%;
-    border-right: 1px solid magenta; }
+    border-right: 1px solid #ff00ff; }
 
 iframe.map {
   display: none; }
