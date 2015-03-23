@@ -1,0 +1,10 @@
+Made by:
+
+    Markus Tacker <m@cto.hiv> | http://cto.hiv/
+
+Made with:
+
+    Font Awesome                    http://fortawesome.github.com/Font-Awesome
+    normalize.css                   http://github.com/necolas/normalize.css
+    Sass                            http://sass-lang.com/
+    Grunt                           http://gruntjs.com/

@@ -1,0 +1,14 @@
+{
+    "name": "offenraum-github-pages",
+    "description": "Static website for http://offenraum.de",
+    "version": "1.0.0",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/coderbyheart/offenraum.git"
+    },
+    "devDependencies": {
+        "grunt": "*",
+        "grunt-contrib-sass": "*",
+        "grunt-cli": "*"
+    }
+}
